@@ -26,11 +26,10 @@ cat("Student information added.\n")
 
 # Function to calculate average scores
 calculate_average_scores <- function() {
-avg_scores <- student_data %>%
-mutate(Average_Score = (Math_Score + Science_Score + History_Score) / 3)
-%>%
-select(Name, Average_Score)
-return(avg_scores)
+  avg_scores <- student_data %>%
+    mutate(Average_Score = (Math_Score + Science_Score + History_Score) / 3)
+  
+  return(avg_scores %>% select(Name, Average_Score))
 }
 
 # Function to identify students with low attendance
