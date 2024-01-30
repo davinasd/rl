@@ -1,6 +1,3 @@
-#USN : 1MS21CI063
-#Name : Vatsal Singh
-
 
 library(ggplot2)
 library(dplyr)
